@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300&family=Sono:wght@500&display=swap'); </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <title>Sobre mim</title>
+</head>
+<body>
+    <nav>
+        <div id="pages">
+            <a href="index.html"><b>HOME</b></a>
+            <div class="selecionado">
+                <a href="sobre.html" id="sobreMim"><b>SOBRE MIM</b></a>
+                <div class="linha"></div>
+            </div>
+            <a href="contato.html"><b>CONTATO</b></a>
+        </div>
+
+        <div id="nome">
+            <a href="https://www.linkedin.com/in/paulo-felipe-silva-sim%C3%A3o-561763236/" target="_blank"><b>Paulo Felipe Silva Simão</b></a>
+            <img src="../imagens/logo.png" alt="Logo">
+        </div>
+    </nav>
+
+    <main>
+        <h1>Sobre mim</h1>
+
+        <div class="sobre">
+            <p>Meu nome é Paulo Felipe Silva Simão, tenho <span id="idade"></span> anos de idade, moro em Cotia-SP e sou estudante de Análise e Desenvolvimento de Sistemas. Tive meu primeiro contato com a programação aos 17 anos, desde então pretendo seguir na área de desenvolvedor Back-end.</p>
+        </div>
+
+        <h2>Formação Acadêmica</h2>
+
+        <div class="formacao">
+            <p>Com 17 anos, no segundo semestre de 2021, ingressei no Curso Técnico de Desenvolvimento de Sistemas na instituição Senai Cotia - Ricardo Lerner, enquanto ainda estava cursando o 3º ano do Ensino Médio.</p>
+
+            <p>Em dezembro de 2021, conclui o Ensino Médio.</p>
+
+            <p>Em 2022, ingressei no Curso Superior de Análise e Desenvolvimento de Sistemas na Fatec Carapicuíba, em paralelo com o Curso Técnico. Em dezembro desse ano, concluí o Curso Técnico de Desenvolvimento de Sistemas.</p>
+        </div>
+
+        <h2>Conhecimentos</h2>
+        <div class="iconesConhecimento">
+            <i class='bx bxl-java bx-lg'></i>
+            <i class='bx bxl-javascript bx-lg' ></i>
+            <i class='bx bxl-spring-boot bx-lg'></i>
+            <i class='bx bxl-html5 bx-lg'></i>
+            <i class='bx bxl-css3 bx-lg' ></i>
+            <i class='bx bxs-data bx-lg'></i>
+            <iconify-icon inline icon="simple-icons:mysql" width="50" height="50"></iconify-icon>
+        </div>
+        
+        <h2>Ferramentas</h2>
+        <div class="iconesFerramenta">
+            <i class='bx bxl-figma bx-lg' ></i>
+            <i class='bx bxl-visual-studio bx-lg'></i>
+            <i class='bx bxl-git bx-lg'></i>
+            <i class='bx bxl-github bx-lg' ></i>
+            <iconify-icon inline icon="simple-icons:androidstudio" width="45"></iconify-icon>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        const nascimento = new Date('04/10/2004');
+        const data = new Date();
+
+        let idade = data.getFullYear() - nascimento.getFullYear();
+
+        const mes = data.getMonth() - nascimento.getMonth();
+
+        if(mes < 0 || (mes === 0 && data.getDate() < nascimento.getDate())){
+            idade--;
+        }
+
+        document.getElementById('idade').textContent = idade;
+
+        console.log(idade)
+
+        console.log(data);
+        console.log(nascimento);
+    </script>
+    </body>
+</html>

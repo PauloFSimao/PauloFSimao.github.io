@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@keyframes surgir{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }  
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-image: linear-gradient(white,white, white, #3385ff);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    background-color: #3385FF;
+    text-align: center;
+    padding: 20px ;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#pages{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    margin: 0px 10px;
+    color: white;
+    transition-duration: 0.7s;
+}
+#home{
+    color: #000099;
+    text-decoration: none;
+    margin: 0px 10px;
+    transition-duration: 0.7s;
+}
+#nome{
+    position: absolute;
+    right: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    
+}
+#nome:hover{
+    color: #000099;
+}
+#central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: surgir;
+    animation-duration: 4s;
+}
+img{
+    text-align: center;
+    animation-name: surgir;
+    animation-duration: 2s;
+}
+#bemVindo{
+    width: 300px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+#btSobre{
+    background-color: #3385FF;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 2px #0073E6;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+#btSobre:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(120, 116, 116) 5px 5px 10px;
+}
+a:hover, #home:hover{
+    color: #002b80;
+}
+#pages{
+    margin: auto;
+}
+
+/* Estilo referente á página contato */
+#contato{
+    color: #000099;
+}
+#contato:hover{
+    color: #0059b3;
+}
+.introducao{
+    animation-name: surgir;
+    animation-duration: 4s;
+}
+#container{
+    background-color: #d9d9d9;
+    display: flex;
+    width: 700px;
+    border: 2px solid #0A3D98;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    animation-name: surgir;
+    animation-duration: 8s;
+}
+.int_contato{
+    text-align: center;
+}
+#contatos a{
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+}
+#contatos a:hover{
+    color: #0066cc;
+}
+.logo{
+    width: 200px;
+}
+
+/* Estilo referente á página Sobre Mim*/
+#sobreMim{
+    color: #000099;
+}
+#sobreMim:hover{
+    color: #0059b3;
+}
+.sobre{
+    background-color: #3385FF;
+    padding: 10px;
+}
+.sobre p{
+    width: 800px;
+    margin: auto;
+    text-align: justify;
+    animation-name: surgir;
+    animation-duration: 4s;
+}
+h2{
+    text-align: center;
+    margin-top: 15px;
+    animation-name: surgir;
+    animation-duration: 4s;
+}
+.formacao{
+    background-color: #d9d9d9;
+    padding: 10px 40px;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    border: 2px solid #0A3D98;
+    animation-name: surgir;
+    animation-duration: 8s;
+}
+.formacao p{
+    width: 800px;
+    text-align: justify;
+    margin-top: 10px;
+}
+.iconesConhecimento{
+    background-color: #0A3D98;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    border-radius: 15px;
+    border: 2px solid #000099;
+    animation-name: surgir;
+    animation-duration: 8s;
+}
+.iconesFerramenta{
+    background-color: #3385FF;
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    border-radius: 15px;
+    border: 2px solid #0A3D98;
+    animation-name: surgir;
+    animation-duration: 8s;
+}
+i{
+    margin: 10px;
+}
+
+.selecionado{
+    display: inline-block;
+}
+.linha{
+    height: 5px;
+    background-color: #000099;
+    border-radius: 8px;
+}
+#nome img{
+    width: 60px;
+    display: inline;
+}
